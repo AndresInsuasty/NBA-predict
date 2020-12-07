@@ -28,8 +28,14 @@ It will appear a Demo in your browser localhost:8501 to stop it Ctrl + c
 ```
 pip install pycaret
 ```
+6. For me was necessary install xlrd to work with excel files
+```
+pip install xlrd
+```
+
 
 # Requirements
 * python==3.6
 * streamlit==0.72
 * pycaret==2.2.2
+* xlrd==1.2.0
