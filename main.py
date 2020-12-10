@@ -15,7 +15,7 @@ uploaded_file = st.file_uploader("Choose a file",type=['xlsx'])
 if uploaded_file is not None:
     data = pd.read_excel(uploaded_file)
     st.write(data.head())
-    uploaded_file.seek(0)
+    uploaded_file.seek(0) #libera memoria
     try:
         output=[]
         if selection == 'Drafkings':

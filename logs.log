@@ -508,3 +508,59 @@
                  <catboost.core.CatBoostRegressor object at 0x000000C314B500F0>]]))
 2020-12-09 20:07:22,897:INFO:Checking exceptions
 2020-12-09 20:07:22,898:INFO:Preloading libraries
+2020-12-09 20:22:45,190:INFO:Initializing load_model()
+2020-12-09 20:22:45,196:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=utils/models/catb_saved_DF)
+2020-12-09 20:22:46,207:INFO:Initializing predict_model()
+2020-12-09 20:22:46,213:INFO:predict_model(display=None, ml_usecase=MLUsecase.REGRESSION, verbose=True, round=4, encoded_labels=True, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL',
+                                                          'DAYS\nREST'],
+                                      target='SCORED_DK.1')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagoric...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='SCORED_DK.1')),
+                ('fix_perfect', Remove_100(target='SCORED_DK.1')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000031590CCE10>]]))
+2020-12-09 20:22:46,217:INFO:Checking exceptions
+2020-12-09 20:22:46,218:INFO:Preloading libraries
+2020-12-09 20:23:43,185:INFO:Initializing load_model()
+2020-12-09 20:23:43,185:INFO:load_model(verbose=True, authentication=None, platform=None, model_name=utils/models/catb_saved_DF)
+2020-12-09 20:23:43,300:INFO:Initializing predict_model()
+2020-12-09 20:23:43,313:INFO:predict_model(display=None, ml_usecase=MLUsecase.REGRESSION, verbose=True, round=4, encoded_labels=True, probability_threshold=None, estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL',
+                                                          'DAYS\nREST'],
+                                      target='SCORED_DK.1')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagoric...
+                ('binn', 'passthrough'), ('rem_outliers', 'passthrough'),
+                ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='SCORED_DK.1')),
+                ('fix_perfect', Remove_100(target='SCORED_DK.1')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000031613F4A90>]]))
+2020-12-09 20:23:43,375:INFO:Checking exceptions
+2020-12-09 20:23:43,376:INFO:Preloading libraries

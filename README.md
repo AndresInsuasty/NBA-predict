@@ -32,6 +32,12 @@ pip install pycaret
 ```
 pip install xlrd
 ```
+7. Now we are going to run the code with following command in our terminal
+```
+streamlit run main.py
+```
+8. Enjoy the application in your browser in localhost:8501
+
 
 
 # Requirements
