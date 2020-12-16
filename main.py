@@ -9,11 +9,15 @@ from utils.select_your_team_F import team_f
 from utils.select_your_team_DK import team_dk
 
 st.title('NBA Fantasy points prediction')
-selection=st.selectbox("Select a Platform",['Drafkings','Fanduel'])
-uploaded_file = st.file_uploader("Choose a file",type=['xlsx'])
+selection = st.selectbox("Select a Platform",['Drafkings','Fanduel'])
+selection_file = st.selectbox("Select a File extension",['CSV','XLSX'])
+uploaded_file = st.file_uploader("Choose a file",type=['csv','xlsx'])
 
 if uploaded_file is not None:
-    data = pd.read_excel(uploaded_file)
+    if selection_file=='CSV':
+        data = pd.read_csv(uploaded_file)
+    else:
+        data = pd.read_excel(uploaded_file)
     st.write(data.head())
     uploaded_file.seek(0) #libera memoria
     try:
