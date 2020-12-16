@@ -2,6 +2,21 @@ from pycaret.regression import *
 import pandas as pd
 
 def team_f(df,catb_F):
+
+  def select(df):
+    points=df['points'].values
+    minimum=min(points)
+    index = df[df['points']==minimum].index.tolist()
+    team=df.at[index[0],'team']
+    name=df.at[index[0],'name']
+    return(team,name)
+
+  def index_top_10(df,team,name):
+    
+    index = df[(df['PLAYER \\nFULL NAME']==name)&(df['TEAM']==team)].index.tolist()
+    df=df.drop([index[0]],axis=0)
+    return df
+
   def read(df,df_aux_1):
     score_F=[]
     positions=[]
@@ -294,27 +309,40 @@ def team_f(df,catb_F):
     df = pd.DataFrame({'name':names,'team':team,'position':position,'salary':salary,'points':points})
     return df 
 
-  df_aux_1=df.drop(['PLAYER \\nFULL NAME','TEAM'],axis=1)
-  df_aux_2=read(df,df_aux_1)
-  df_C=df_aux_2[df_aux_2.POSITION == 'C']
-  df_SG=df_aux_2[df_aux_2.POSITION == 'SG']
-  df_SF=df_aux_2[df_aux_2.POSITION == 'SF']
-  df_PG=df_aux_2[df_aux_2.POSITION == 'PG']
-  df_PF=df_aux_2[df_aux_2.POSITION == 'PF']
-  list_PG=suma_PG(df_PG.values)
-  list_PF=suma_PF(df_PF.values)
-  list_SG=suma_SG(df_SG.values)
-  list_SF=suma_SF(df_SF.values)
-  list_C=suma_C(df_C.values)
+  def top_10(df):
+    
+    df_base=pd.DataFrame()
+    dic={'lineup_1':df_base,'lineup_2':df_base,'lineup_3':df_base,'lineup_4':df_base,'lineup_5':df_base
+        ,'lineup_6':df_base,'lineup_7':df_base,'lineup_8':df_base,'lineup_9':df_base,'lineup_10':df_base}
+    for k in dic:
+      df_aux_1=df.drop(['PLAYER \\nFULL NAME','TEAM'],axis=1)
+      df_aux_2=read(df,df_aux_1)
+      df_C=df_aux_2[df_aux_2.POSITION == 'C']
+      df_SG=df_aux_2[df_aux_2.POSITION == 'SG']
+      df_SF=df_aux_2[df_aux_2.POSITION == 'SF']
+      df_PG=df_aux_2[df_aux_2.POSITION == 'PG']
+      df_PF=df_aux_2[df_aux_2.POSITION == 'PF']
+      list_PG=suma_PG(df_PG.values)
+      list_PF=suma_PF(df_PF.values)
+      list_SG=suma_SG(df_SG.values)
+      list_SF=suma_SF(df_SF.values)
+      list_C=suma_C(df_C.values)
 
+      player_C=sorted(list_C, reverse=True, key = lambda x: x[2])
+      players_PG=sorted(list_PG, reverse=True, key = lambda x: x[3])
+      players_PF=sorted(list_PF, reverse=True,key = lambda x: x[3])
+      players_SG=sorted(list_SG,reverse=True, key = lambda x: x[3])
+      players_SF=sorted(list_SF,reverse=True, key = lambda x: x[3])
 
+      total_players=[player_C[0],players_PG[0],players_PF[0],players_SG[0],players_SF[0]]
+      df_0=select_FD(total_players)
+      #print(df_0)
+      dic[k]=df_0
+      x,y=select(df_0)
+      df=index_top_10(df,x,y)
+      df=df.reset_index(drop=True)
+      
 
-  player_C=sorted(list_C, reverse=True, key = lambda x: x[2])
-  players_PG=sorted(list_PG, reverse=True, key = lambda x: x[3])
-  players_PF=sorted(list_PF, reverse=True,key = lambda x: x[3])
-  players_SG=sorted(list_SG,reverse=True, key = lambda x: x[3])
-  players_SF=sorted(list_SF,reverse=True, key = lambda x: x[3])
-
-  total_players=[player_C[0],players_PG[0],players_PF[0],players_SG[0],players_SF[0]]
-  #print(select_FD(total_players))
-  return select_FD(total_players)
+    return dic
+  
+  return top_10(df)

@@ -17,7 +17,7 @@ if uploaded_file is not None:
     st.write(data.head())
     uploaded_file.seek(0) #libera memoria
     try:
-        output=[]
+        output={}
         if selection == 'Drafkings':
             catb_DK = forecast.load_drafkings()
             output = team_dk(data,catb_DK)
@@ -25,7 +25,9 @@ if uploaded_file is not None:
             catb_F = forecast.load_fanduel()    
             output = team_f(data,catb_F)
         st.markdown('# Here is your team!')
-        st.write(output)
+        for i in range(1,11):
+            st.markdown('### Team '+str(i))
+            st.write(output['lineup_'+str(i)])
     except:
         st.markdown('# Please review your data, we found errors')
     
