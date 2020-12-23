@@ -23,6 +23,7 @@ if uploaded_file is not None:
     uploaded_file.seek(0) #libera memoria
     teams = pd.unique(data['TEAM'])
     selected_teams = np.zeros(len(teams))
+    st.markdown('# Select your teams to make predictions please!')
     for id,team in enumerate(teams):
         selected_teams[id] = st.checkbox(team,value=True)
     teams_df = pd.concat([pd.Series(teams),pd.Series(selected_teams)],axis=1)
