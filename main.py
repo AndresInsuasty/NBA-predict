@@ -1,6 +1,7 @@
 # Script to run the principal code 
 import streamlit as st
 import pandas as pd
+import numpy as np
 import os
 
 # local packages
@@ -18,22 +19,33 @@ if uploaded_file is not None:
         data = pd.read_csv(uploaded_file)
     else:
         data = pd.read_excel(uploaded_file)
-    st.write(data.head())
+    #st.write(data.head())
     uploaded_file.seek(0) #libera memoria
-    try:
-        output={}
-        if selection == 'Drafkings':
-            catb_DK = forecast.load_drafkings()
-            output = team_dk(data,catb_DK)
-        elif selection == 'Fanduel':
-            catb_F = forecast.load_fanduel()    
-            output = team_f(data,catb_F)
-        st.markdown('# Here is your team!')
-        for i in range(1,11):
-            st.markdown('### Team '+str(i))
-            st.write(output['lineup_'+str(i)])
-    except:
-        st.markdown('# Please review your data, we found errors')
+    teams = pd.unique(data['TEAM'])
+    selected_teams = np.zeros(len(teams))
+    for id,team in enumerate(teams):
+        selected_teams[id] = st.checkbox(team,value=True)
+    teams_df = pd.concat([pd.Series(teams),pd.Series(selected_teams)],axis=1)
+    teams_df.columns=['TEAM','Selected']
+    teams_selected_df = teams_df[teams_df['Selected']==True]
+    filter = data[data['TEAM'].isin(teams_selected_df['TEAM'].to_list())]
+    filter = filter.reset_index(drop=True)
+    #st.write(data)
+    st.write(filter)
+    #try:
+    output={}
+    if selection == 'Drafkings':
+        catb_DK = forecast.load_drafkings()
+        output = team_dk(filter,catb_DK)
+    elif selection == 'Fanduel':
+        catb_F = forecast.load_fanduel()    
+        output = team_f(filter,catb_F)
+    st.markdown('# Here is your team!')
+    for i in range(1,11):
+        st.markdown('### Team '+str(i))
+        st.write(output['lineup_'+str(i)])
+    #except:
+        #st.markdown('# Please review your data, we found errors')
     
     
     
