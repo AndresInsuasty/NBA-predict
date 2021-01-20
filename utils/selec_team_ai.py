@@ -26,11 +26,22 @@ def random_team(C,PG,PF,SG,SF,seed=1):
     sf = SF.sample(2,random_state=seed)
     return pd.concat([c,pg,pf,sg,sf],axis=0)
 
+def random_team_f(C,PG,PF,SG,SF,seed=1):
+    c = C.sample(2,random_state=seed)
+    pg = PG.sample(2,random_state=seed)
+    pf = PF.sample(1,random_state=seed)
+    sg = SG.sample(2,random_state=seed)
+    sf = SF.sample(2,random_state=seed)
+    return pd.concat([c,pg,pf,sg,sf],axis=0)
+
 def finals_teams(C,PG,PF,SG,SF,iterations=10,limit=50000,platform='SALARY_DK'):
     output={}
     cont = 0
     for i in range(iterations):
-        rt = random_team(C,PG,PF,SG,SF,i)
+        if platform=='SALARY_DK':
+            rt = random_team(C,PG,PF,SG,SF,i)
+        else:
+            rt = random_team_f(C,PG,PF,SG,SF,i)
         if rt[platform].sum()<limit:
             equipos_conteo=rt.groupby('TEAM')['TEAM'].count()
             l_count = len(equipos_conteo[equipos_conteo>4])
