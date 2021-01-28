@@ -49,13 +49,3 @@ def finals_teams(C,PG,PF,SG,SF,iterations=10,limit=50000,platform='SALARY_DK'):
                 output['team'+str(cont)]=rt
                 cont += 1
     return output
-def delete_equals(output):
-    new_dic={}
-    for key,value in output.items():
-        band=False
-        for key2,value2 in new_dic.items():
-            if value.equals(value2):
-                band=True
-        if band==False:
-            new_dic[key] = value
-    return new_dic
