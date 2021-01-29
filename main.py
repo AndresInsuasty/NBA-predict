@@ -32,35 +32,36 @@ if uploaded_file is not None:
     teams_df = pd.concat([pd.Series(teams),pd.Series(selected_teams)],axis=1)
     teams_df.columns=['TEAM','Selected']
     teams_selected_df = teams_df[teams_df['Selected']==True]
-    #filtra los equipos seleccionados 
-    filter = data[data['TEAM'].isin(teams_selected_df['TEAM'].to_list())]
-    filter = filter.reset_index(drop=True)
-    #st.write(filter)
-    st.dataframe(filter)
+    if st.button('Predict'):
+        #filtra los equipos seleccionados 
+        filter = data[data['TEAM'].isin(teams_selected_df['TEAM'].to_list())]
+        filter = filter.reset_index(drop=True)
+        #st.write(filter)
+        st.dataframe(filter)
 
-    #cargamos el modelo
-    model = load_fanduel()
-    st.title('NBA Fantasy points Results')
-    data_predict = predict(filter,model)
-    st.write(data_predict)
+        #cargamos el modelo
+        model = load_fanduel()
+        st.title('NBA Fantasy points Results')
+        data_predict = predict(filter,model)
+        st.write(data_predict)
 
-    salary = st.number_input("Max Salary", 60000)
+        salary = st.number_input("Max Salary", 60000)
 
-    n_teams = st.number_input("¿How much teams do you want?", 20)
+        n_teams = st.number_input("¿How much teams do you want?", 20)
 
-    #Generacion de equipos
-    st.title('NBA Fantasy points TEAMS')
-    output_team = get_teams(data_predict,salary,n_teams) 
-    #Muestra de equipos
-    pts=0
-    cont=1
-    for key in output_team:
-        pts = output_team[key]['FD_PTS'].sum()
-        st.subheader('TEAM '+str(cont))
-        st.markdown('**_SALARY_** = '+str(round(output_team[key]['FD_SALARY'].sum(),2))+' USD')
-        st.markdown('**_FANTASY POINTS_** = '+str(round(pts,2)))
-        st.write(output_team[key])
-        cont+=1
+        #Generacion de equipos
+        st.title('NBA Fantasy points TEAMS')
+        output_team = get_teams(data_predict,salary,n_teams) 
+        #Muestra de equipos
+        pts=0
+        cont=1
+        for key in output_team:
+            pts = output_team[key]['FD_PTS'].sum()
+            st.subheader('TEAM '+str(cont))
+            st.markdown('**_SALARY_** = '+str(round(output_team[key]['FD_SALARY'].sum(),2))+' USD')
+            st.markdown('**_FANTASY POINTS_** = '+str(round(pts,2)))
+            st.write(output_team[key])
+            cont+=1
     
     
     

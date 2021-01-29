@@ -1,3 +1,4 @@
 streamlit==0.75
 pycaret==2.2.3
 openpyxl==3.0.6
+more-itertools==8.6.0
