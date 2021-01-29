@@ -1,51 +1,84 @@
 import pandas as pd
+from itertools import  *
 from pycaret.regression import *
 
-def predict_fp(data,model):
-    data2 = data.drop(['PLAYER \\nFULL NAME','TEAM'],axis=1)
-    prediction = predict_model(model, data2)
-    prediction.rename(columns={'Label':'fantasy points'},inplace=True)
-    return pd.concat([data[['PLAYER \\nFULL NAME','TEAM']],prediction],axis=1)
+def predict(data,model):
+    data_clean = clean(data)
+    prediction = predict_model(model, data_clean)
+    prediction.rename(columns={'Label':'FD_PTS'},inplace=True)
+    return pd.concat([data[['PLAYERS','TEAM','FD_POS','FD_SALARY']],prediction['FD_PTS']],axis=1)
 
-def segment_data(data,platform='POSITION_DK.1'):
-    C=data[data[platform]=='C'].sort_values('fantasy points',ascending=False)
-    PG=data[data[platform]=='PG'].sort_values('fantasy points',ascending=False)
-    PF=data[data[platform]=='PF'].sort_values('fantasy points',ascending=False)
-    SG=data[data[platform]=='SG'].sort_values('fantasy points',ascending=False)
-    SF=data[data[platform]=='SF'].sort_values('fantasy points',ascending=False)
-    return C,PG,PF,SG,SF
+def clean(data):
+    data_aux = data.drop([data.columns[0],'DATE','PLAYERS','TEAM', 'OPP_TEAM','VENUE\n(R/H)','CLOSING_SPREAD', 'CLOSING_TOTAL', 'PACE', 'OEFF','DEFF', 'TEAM(REST)', 'PLAYERS(REST)','FD_POS'],axis=1)
+    data_aux.rename(columns={'STARTER\n(Y/N)':'STARTER','2FG':'FG','2FGA':'FGA','FD_SALARY':'SALARY'},inplace=True)
+    return data_aux
 
-def find_better(data,n=5):
-    return data.iloc[0:n]
+def juntar(l1,l2):
+  aux = []
+  for x in l1:
+    for y in l2:
+      aux.append(x+y)
+  return aux
 
-def random_team(C,PG,PF,SG,SF,seed=1):
-    c = C.sample(1,random_state=seed)
-    pg = PG.sample(2,random_state=seed)
-    pf = PF.sample(1,random_state=seed)
-    sg = SG.sample(2,random_state=seed)
-    sf = SF.sample(2,random_state=seed)
-    return pd.concat([c,pg,pf,sg,sf],axis=0)
+def select_teams(teams,columns,salary_l=60000,num_team=20):
+  num=1
+  output={}
+  for team in teams:
+    aux_df = pd.DataFrame(team,columns=columns)
+    if aux_df['FD_SALARY'].sum() <= salary_l :
+       contar_team=aux_df.groupby('TEAM')['TEAM'].count()
+       count = len(contar_team[contar_team>4])
+       if count == 0:
+         output['team'+str(num)]=aux_df
+         num += 1
+         if num>num_team:
+           break;
+  return output
 
-def random_team_f(C,PG,PF,SG,SF,seed=1):
-    c = C.sample(2,random_state=seed)
-    pg = PG.sample(2,random_state=seed)
-    pf = PF.sample(1,random_state=seed)
-    sg = SG.sample(2,random_state=seed)
-    sf = SF.sample(2,random_state=seed)
-    return pd.concat([c,pg,pf,sg,sf],axis=0)
+def sum_pts(df):
+    col=['PLAYERS', 'TEAM', 'FD_POS', 'FD_SALARY', 'FD_PTS']
+    aux_df= pd.DataFrame(df,columns=col)
+    return aux_df['FD_PTS'].sum()
 
-def finals_teams(C,PG,PF,SG,SF,iterations=10,limit=50000,platform='SALARY_DK'):
-    output={}
-    cont = 0
-    for i in range(iterations):
-        if platform=='SALARY_DK':
-            rt = random_team(C,PG,PF,SG,SF,i)
-        else:
-            rt = random_team_f(C,PG,PF,SG,SF,i)
-        if rt[platform].sum()<limit:
-            equipos_conteo=rt.groupby('TEAM')['TEAM'].count()
-            l_count = len(equipos_conteo[equipos_conteo>4])
-            if l_count == 0:
-                output['team'+str(cont)]=rt
-                cont += 1
-    return output
+def get_teams(data,salary_limit=60000,num_team=20):
+    columns = data.columns
+    #Separamos por posicion
+    SG_d = data[data['FD_POS']=='SG'].sort_values('FD_PTS',ascending=False)
+    SF_d = data[data['FD_POS']=='SF'].sort_values('FD_PTS',ascending=False)
+    PG_d = data[data['FD_POS']=='PG'].sort_values('FD_PTS',ascending=False)
+    PF_d = data[data['FD_POS']=='PF'].sort_values('FD_PTS',ascending=False)
+    C_d = data[data['FD_POS']=='C'].sort_values('FD_PTS',ascending=False)
+
+    #Convertirmos en lista para sacar combinatoria
+    SG_d = SG_d.values.tolist()
+    SF_d = SF_d.values.tolist()
+    PG_d = PG_d.values.tolist()
+    PF_d = PF_d.values.tolist()
+    C_d = C_d.values.tolist()
+
+    #Combinatorio de los elementos
+    SG = list(combinations(SG_d,2))
+    SF = list(combinations(SF_d,2))
+    PG = list(combinations(PG_d,2))
+    PF = list(combinations(PF_d,2))
+    C = list(combinations(C_d,1))
+
+    #Organizamos para que quede list-list
+    SG = [list(i) for i in SG] 
+    SF = [list(i) for i in SF] 
+    PG = [list(i) for i in PG] 
+    PF = [list(i) for i in PF]
+    C =  [list(i) for i in C]
+
+    teams = []
+    teams = juntar(SG,SF)
+    teams = juntar(teams,PG)
+    teams = juntar(teams,PF)
+    teams = juntar(teams,C)
+
+    #Como estaban ordenados las primeros tienen los mayores pts
+    best_team= teams[0:50000]
+    #ordenamos
+    best_team.sort(key=sum_pts,reverse=True)
+
+    return select_teams(best_team,columns,salary_limit,num_team)
