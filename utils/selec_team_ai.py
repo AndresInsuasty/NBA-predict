@@ -1,6 +1,7 @@
 import pandas as pd
 from itertools import  *
 from pycaret.regression import *
+import streamlit as st
 
 def predict(data,model):
     data_clean = clean(data)
@@ -39,9 +40,9 @@ def sum_pts(df):
     col=['PLAYERS', 'TEAM', 'FD_POS', 'FD_SALARY', 'FD_PTS']
     aux_df= pd.DataFrame(df,columns=col)
     return aux_df['FD_PTS'].sum()
-
-def get_teams(data,salary_limit=60000,num_team=20):
-    columns = data.columns
+    
+@st.cache(suppress_st_warning=True)
+def get_teams(data):
     #Separamos por posicion
     SG_d = data[data['FD_POS']=='SG'].sort_values('FD_PTS',ascending=False)
     SF_d = data[data['FD_POS']=='SF'].sort_values('FD_PTS',ascending=False)
@@ -81,4 +82,4 @@ def get_teams(data,salary_limit=60000,num_team=20):
     #ordenamos
     best_team.sort(key=sum_pts,reverse=True)
 
-    return select_teams(best_team,columns,salary_limit,num_team)
+    return best_team
