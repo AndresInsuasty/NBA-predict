@@ -33,7 +33,7 @@ if uploaded_file is not None:
     teams_df.columns=['TEAM','Selected']
     teams_selected_df = teams_df[teams_df['Selected']==True]
     options = st.multiselect(
-        'What players do you want to excluit',
+        'What players do you want to exclude?',
         players)
     
     #if st.button('Predict'):
