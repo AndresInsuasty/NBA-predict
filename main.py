@@ -22,6 +22,7 @@ if uploaded_file is not None:
     #Equipos de los datos
     data.dropna(subset=['TEAM'],inplace=True) #drop row con equipo nan
     teams = data['TEAM'].unique()
+    data = data.drop_duplicates(['PLAYERS', 'TEAM'],keep='first')
     players = np.sort(data['PLAYERS'].unique())
     selected_teams = np.zeros(len(teams))
     st.write(teams)
@@ -57,8 +58,17 @@ if uploaded_file is not None:
     #Generacion de equipos
     st.title('NBA Fantasy points Lineups')
     columns = data_predict.columns
-    arr_team = get_teams(data_predict) 
+    inicio=0
+    fin=4
+    arr_team = get_teams(data_predict,inicio,fin) 
     output_team = select_teams(arr_team,columns,salary,n_teams)
+    #print("Antes while "+str(len(output_team)))
+    while(len(output_team)<20):
+        inicio+=1
+        fin+=1
+        arr_team = get_teams(data_predict,inicio,fin) 
+        output_team = select_teams(arr_team,columns,salary,n_teams)
+        #print("Dentro while "+str(len(output_team)))
     #Muestra de equipos
     pts=0
     cont=1

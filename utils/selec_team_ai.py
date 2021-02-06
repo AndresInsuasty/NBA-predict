@@ -42,7 +42,7 @@ def sum_pts(df):
     return aux_df['FD_PTS'].sum()
     
 @st.cache(suppress_st_warning=True)
-def get_teams(data):
+def get_teams(data,inicio,fin):
     #Separamos por posicion
     SG_d = data[data['FD_POS']=='SG'].sort_values('FD_PTS',ascending=False)
     SF_d = data[data['FD_POS']=='SF'].sort_values('FD_PTS',ascending=False)
@@ -50,6 +50,13 @@ def get_teams(data):
     PF_d = data[data['FD_POS']=='PF'].sort_values('FD_PTS',ascending=False)
     C_d = data[data['FD_POS']=='C'].sort_values('FD_PTS',ascending=False)
 
+    #reducimos numero de registros(dejamos los mayores pts)
+    SG_d = SG_d[inicio:fin]
+    SF_d = SF_d[inicio:fin]
+    PG_d = PG_d[inicio:fin]
+    PF_d = PF_d[inicio:fin]
+    C_d = C_d[inicio:fin]
+    
     #Convertirmos en lista para sacar combinatoria
     SG_d = SG_d.values.tolist()
     SF_d = SF_d.values.tolist()
