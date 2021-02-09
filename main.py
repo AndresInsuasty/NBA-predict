@@ -22,8 +22,14 @@ if uploaded_file is not None:
     #Equipos de los datos
     data.dropna(subset=['TEAM'],inplace=True) #drop row con equipo nan
     teams = data['TEAM'].unique()
-    data = data.drop_duplicates(['PLAYERS', 'TEAM'],keep='first')
-    players = np.sort(data['PLAYERS'].unique())
+    #Salario promedio
+    res = data.groupby(['PLAYERS', 'TEAM'])['FD_SALARY'].mean().reset_index()
+    #Elimina duplicados
+    data = data.drop_duplicates(['PLAYERS', 'TEAM'],keep='first').sort_values(by=['PLAYERS']).reset_index()
+    data['FD_SALARY'] = res['FD_SALARY']
+    #jugadores para excluir
+    data['namep_team'] = data['PLAYERS'].str.cat(data['TEAM'],sep=" | ")
+    players = np.sort(data['namep_team'].unique())
     selected_teams = np.zeros(len(teams))
     st.write(teams)
     st.markdown('# Select your teams to make predictions please!')
@@ -37,10 +43,10 @@ if uploaded_file is not None:
         'What players do you want to exclude?',
         players)
     
-    #if st.button('Predict'):
+    #st.button('Predict'):
     #filtra los equipos seleccionados 
     filter = data[data['TEAM'].isin(teams_selected_df['TEAM'].to_list())]
-    filter = filter[~filter['PLAYERS'].isin(options)]
+    filter = filter[~filter['namep_team'].isin(options)]
     filter = filter.reset_index(drop=True)
     #st.write(filter)
     st.dataframe(filter)
