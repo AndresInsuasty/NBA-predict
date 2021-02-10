@@ -1,7 +1,16 @@
 import pandas as pd
 from itertools import  *
+from io import StringIO
 from pycaret.regression import *
 import streamlit as st
+import math
+
+@st.cache(hash_funcs={StringIO: StringIO.getvalue}, suppress_st_warning=True,allow_output_mutation=True)
+def load_data(file_uploaded,selection_file):
+    if selection_file=='CSV':
+        return pd.read_csv(file_uploaded)
+    else:
+        return pd.read_excel(file_uploaded)
 
 def predict(data,model):
     data_clean = clean(data)
@@ -21,9 +30,8 @@ def juntar(l1,l2):
       aux.append(x+y)
   return aux
 
-def select_teams(teams,columns,salary_l=60000,num_team=20):
+def select_teams(teams,columns,output,salary_l=60000,num_team=20):
   num=1
-  output={}
   for team in teams:
     aux_df = pd.DataFrame(team,columns=columns)
     if aux_df['FD_SALARY'].sum() <= salary_l :
@@ -36,26 +44,30 @@ def select_teams(teams,columns,salary_l=60000,num_team=20):
            break;
   return output
 
+
+def prom_values(data):
+    #Salario promedio 
+    res= data.groupby(['PLAYERS', 'TEAM'])['MINS','USAGE_RATE','FD_SALARY','2FG','2FGA','3P','3PA','FT','FTA','OR','DR','REBR','AST','PF','ST','TO','BL','PTS'].mean().reset_index()
+    #Elimina duplicados
+    data = data.drop_duplicates(['PLAYERS', 'TEAM'],keep='last').sort_values(by=['PLAYERS']).reset_index()
+    data[['MINS','USAGE_RATE']] = res[['MINS','USAGE_RATE']]
+    data[['2FG','2FGA','3P','3PA','FT','FTA','OR','DR','REBR','AST','PF','ST','TO','BL','PTS']] = res[['2FG','2FGA','3P','3PA','FT','FTA','OR','DR','REBR','AST','PF','ST','TO','BL','PTS']].round(0)
+    return data
+    
+
 def sum_pts(df):
     col=['PLAYERS', 'TEAM', 'FD_POS', 'FD_SALARY', 'FD_PTS']
     aux_df= pd.DataFrame(df,columns=col)
     return aux_df['FD_PTS'].sum()
     
 @st.cache(suppress_st_warning=True)
-def get_teams(data,inicio,fin):
+def get_player(data,inicio,fin):
     #Separamos por posicion
     SG_d = data[data['FD_POS']=='SG'].sort_values('FD_PTS',ascending=False)
     SF_d = data[data['FD_POS']=='SF'].sort_values('FD_PTS',ascending=False)
     PG_d = data[data['FD_POS']=='PG'].sort_values('FD_PTS',ascending=False)
     PF_d = data[data['FD_POS']=='PF'].sort_values('FD_PTS',ascending=False)
     C_d = data[data['FD_POS']=='C'].sort_values('FD_PTS',ascending=False)
-
-    #reducimos numero de registros(dejamos los mayores pts)
-    SG_d = SG_d[inicio:fin]
-    SF_d = SF_d[inicio:fin]
-    PG_d = PG_d[inicio:fin]
-    PF_d = PF_d[inicio:fin]
-    C_d = C_d[inicio:fin]
     
     #Convertirmos en lista para sacar combinatoria
     SG_d = SG_d.values.tolist()
@@ -77,6 +89,21 @@ def get_teams(data,inicio,fin):
     PG = [list(i) for i in PG] 
     PF = [list(i) for i in PF]
     C =  [list(i) for i in C]
+
+    SG.sort(key=sum_pts,reverse=True)
+    SF.sort(key=sum_pts,reverse=True)
+    PG.sort(key=sum_pts,reverse=True)
+    PF.sort(key=sum_pts,reverse=True)
+    #get_teams(SG,SF,PG,PF,C,inicio,fin)
+    return SG,SF,PG,PF,C
+    
+def get_teams(SG,SF,PG,PF,C,inicio,fin):
+  #reducimos numero de registros(dejamos los mayores pts)
+    SG = SG[inicio:fin]
+    SF= SF[inicio:fin]
+    PG = PG[inicio:fin]
+    PF = PF[inicio:fin]
+    C = C[inicio:fin]
 
     teams = []
     teams = juntar(SG,SF)

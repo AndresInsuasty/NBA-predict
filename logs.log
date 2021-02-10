@@ -1974,3 +1974,1617 @@
                  <catboost.core.CatBoostRegressor object at 0x0000026DCA268148>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
 2021-02-08 19:12:38,011:INFO:Checking exceptions
 2021-02-08 19:12:38,011:INFO:Preloading libraries
+2021-02-08 20:44:06,401:INFO:Initializing load_model()
+2021-02-08 20:44:06,417:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-08 20:44:07,281:INFO:Initializing predict_model()
+2021-02-08 20:44:07,281:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000187F72D9608>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-08 20:44:07,282:INFO:Checking exceptions
+2021-02-08 20:44:07,282:INFO:Preloading libraries
+2021-02-08 21:21:21,880:INFO:Initializing load_model()
+2021-02-08 21:21:21,902:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-08 21:21:22,005:INFO:Initializing predict_model()
+2021-02-08 21:21:22,006:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000187F7639108>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-08 21:21:22,007:INFO:Checking exceptions
+2021-02-08 21:21:22,007:INFO:Preloading libraries
+2021-02-08 21:22:23,481:INFO:Initializing load_model()
+2021-02-08 21:22:23,482:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-08 21:22:23,537:INFO:Initializing predict_model()
+2021-02-08 21:22:23,538:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000187F7274748>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-08 21:22:23,540:INFO:Checking exceptions
+2021-02-08 21:22:23,540:INFO:Preloading libraries
+2021-02-08 23:48:42,445:INFO:Initializing load_model()
+2021-02-08 23:48:42,780:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-08 23:48:44,266:INFO:Initializing predict_model()
+2021-02-08 23:48:44,266:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5C2F95F88>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-08 23:48:44,267:INFO:Checking exceptions
+2021-02-08 23:48:44,267:INFO:Preloading libraries
+2021-02-08 23:55:02,126:INFO:Initializing load_model()
+2021-02-08 23:55:02,126:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-08 23:55:02,187:INFO:Initializing predict_model()
+2021-02-08 23:55:02,590:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5C383A508>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-08 23:55:02,591:INFO:Checking exceptions
+2021-02-08 23:55:02,592:INFO:Preloading libraries
+2021-02-08 23:55:56,821:INFO:Initializing load_model()
+2021-02-08 23:55:56,823:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-08 23:55:56,915:INFO:Initializing predict_model()
+2021-02-08 23:55:56,916:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5DD2EBCC8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-08 23:55:56,929:INFO:Checking exceptions
+2021-02-08 23:55:56,930:INFO:Preloading libraries
+2021-02-08 23:56:32,252:INFO:Initializing load_model()
+2021-02-08 23:56:32,254:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-08 23:56:32,882:INFO:Initializing predict_model()
+2021-02-08 23:56:32,882:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5C38EA588>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-08 23:56:32,883:INFO:Checking exceptions
+2021-02-08 23:56:32,883:INFO:Preloading libraries
+2021-02-08 23:58:13,381:INFO:Initializing load_model()
+2021-02-08 23:58:13,381:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-08 23:58:13,464:INFO:Initializing predict_model()
+2021-02-08 23:58:13,550:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5C459BD88>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-08 23:58:13,778:INFO:Checking exceptions
+2021-02-08 23:58:13,781:INFO:Preloading libraries
+2021-02-09 00:01:38,510:INFO:Initializing load_model()
+2021-02-09 00:01:38,511:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 00:01:39,132:INFO:Initializing predict_model()
+2021-02-09 00:01:39,133:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5C4598FC8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 00:01:39,133:INFO:Checking exceptions
+2021-02-09 00:01:39,133:INFO:Preloading libraries
+2021-02-09 00:10:14,849:INFO:Initializing load_model()
+2021-02-09 00:10:15,107:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 00:10:15,164:INFO:Initializing predict_model()
+2021-02-09 00:10:15,165:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5DD3B9D08>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 00:10:15,166:INFO:Checking exceptions
+2021-02-09 00:10:15,167:INFO:Preloading libraries
+2021-02-09 00:41:39,610:INFO:Initializing load_model()
+2021-02-09 00:41:39,859:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 00:41:40,199:INFO:Initializing predict_model()
+2021-02-09 00:41:40,199:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5DC7F6B08>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 00:41:40,200:INFO:Checking exceptions
+2021-02-09 00:41:40,200:INFO:Preloading libraries
+2021-02-09 00:48:51,359:INFO:Initializing load_model()
+2021-02-09 00:48:51,372:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 00:48:51,460:INFO:Initializing predict_model()
+2021-02-09 00:48:51,461:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5C373E448>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 00:48:51,470:INFO:Checking exceptions
+2021-02-09 00:48:51,471:INFO:Preloading libraries
+2021-02-09 00:52:29,437:INFO:Initializing load_model()
+2021-02-09 00:52:29,437:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 00:52:29,535:INFO:Initializing predict_model()
+2021-02-09 00:52:29,536:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5D3547C48>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 00:52:29,543:INFO:Checking exceptions
+2021-02-09 00:52:29,544:INFO:Preloading libraries
+2021-02-09 01:10:55,182:INFO:Initializing load_model()
+2021-02-09 01:10:55,182:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 01:10:55,241:INFO:Initializing predict_model()
+2021-02-09 01:10:55,263:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5DD897B08>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 01:10:55,278:INFO:Checking exceptions
+2021-02-09 01:10:55,278:INFO:Preloading libraries
+2021-02-09 01:12:28,720:INFO:Initializing load_model()
+2021-02-09 01:12:28,721:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 01:12:28,809:INFO:Initializing predict_model()
+2021-02-09 01:12:28,811:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5DC61FC48>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 01:12:28,812:INFO:Checking exceptions
+2021-02-09 01:12:28,812:INFO:Preloading libraries
+2021-02-09 01:14:17,754:INFO:Initializing load_model()
+2021-02-09 01:14:17,776:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 01:14:17,849:INFO:Initializing predict_model()
+2021-02-09 01:14:17,850:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5DCD7FD08>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 01:14:17,851:INFO:Checking exceptions
+2021-02-09 01:14:17,851:INFO:Preloading libraries
+2021-02-09 01:24:33,706:INFO:Initializing load_model()
+2021-02-09 01:24:33,707:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 01:24:33,786:INFO:Initializing predict_model()
+2021-02-09 01:24:33,787:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5DD031108>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 01:24:33,827:INFO:Checking exceptions
+2021-02-09 01:24:33,827:INFO:Preloading libraries
+2021-02-09 01:25:58,594:INFO:Initializing load_model()
+2021-02-09 01:25:58,595:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 01:25:58,674:INFO:Initializing predict_model()
+2021-02-09 01:25:58,675:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002D5C3990F88>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 01:25:58,676:INFO:Checking exceptions
+2021-02-09 01:25:58,676:INFO:Preloading libraries
+2021-02-09 01:39:10,000:INFO:Initializing load_model()
+2021-02-09 01:39:10,016:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 01:39:11,171:INFO:Initializing predict_model()
+2021-02-09 01:39:11,172:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002144ED2CB48>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 01:39:11,173:INFO:Checking exceptions
+2021-02-09 01:39:11,174:INFO:Preloading libraries
+2021-02-09 01:41:01,017:INFO:Initializing load_model()
+2021-02-09 01:41:01,018:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 01:41:01,111:INFO:Initializing predict_model()
+2021-02-09 01:41:01,112:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002144E171C88>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 01:41:01,113:INFO:Checking exceptions
+2021-02-09 01:41:01,114:INFO:Preloading libraries
+2021-02-09 01:43:40,983:INFO:Initializing load_model()
+2021-02-09 01:43:40,984:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 01:43:41,085:INFO:Initializing predict_model()
+2021-02-09 01:43:41,086:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002144EC90748>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 01:43:41,087:INFO:Checking exceptions
+2021-02-09 01:43:41,088:INFO:Preloading libraries
+2021-02-09 02:02:03,607:INFO:Initializing load_model()
+2021-02-09 02:02:03,631:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 02:02:03,724:INFO:Initializing predict_model()
+2021-02-09 02:02:03,725:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002144E15E688>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 02:02:03,727:INFO:Checking exceptions
+2021-02-09 02:02:03,727:INFO:Preloading libraries
+2021-02-09 02:16:23,686:INFO:Initializing load_model()
+2021-02-09 02:16:23,686:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 02:16:24,583:INFO:Initializing predict_model()
+2021-02-09 02:16:24,583:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000153BF27E448>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 02:16:24,584:INFO:Checking exceptions
+2021-02-09 02:16:24,585:INFO:Preloading libraries
+2021-02-09 02:17:45,671:INFO:Initializing load_model()
+2021-02-09 02:17:45,673:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 02:17:45,751:INFO:Initializing predict_model()
+2021-02-09 02:17:45,752:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000153BF4F3448>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 02:17:45,754:INFO:Checking exceptions
+2021-02-09 02:17:45,755:INFO:Preloading libraries
+2021-02-09 02:20:42,813:INFO:Initializing load_model()
+2021-02-09 02:20:42,834:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 02:20:42,916:INFO:Initializing predict_model()
+2021-02-09 02:20:42,916:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000153BF034C88>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 02:20:42,917:INFO:Checking exceptions
+2021-02-09 02:20:42,917:INFO:Preloading libraries
+2021-02-09 02:21:52,189:INFO:Initializing load_model()
+2021-02-09 02:21:52,190:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 02:21:52,265:INFO:Initializing predict_model()
+2021-02-09 02:21:52,265:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000153BF1EDF48>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 02:21:52,267:INFO:Checking exceptions
+2021-02-09 02:21:52,267:INFO:Preloading libraries
+2021-02-09 05:04:44,497:INFO:Initializing load_model()
+2021-02-09 05:04:44,507:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 05:04:44,753:INFO:Initializing predict_model()
+2021-02-09 05:04:44,754:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001E05E8C7F08>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 05:04:44,754:INFO:Checking exceptions
+2021-02-09 05:04:44,754:INFO:Preloading libraries
+2021-02-09 05:06:42,523:INFO:Initializing load_model()
+2021-02-09 05:06:42,523:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 05:06:42,608:INFO:Initializing predict_model()
+2021-02-09 05:06:42,613:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001E061046E88>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 05:06:42,614:INFO:Checking exceptions
+2021-02-09 05:06:42,614:INFO:Preloading libraries
+2021-02-09 05:13:31,713:INFO:Initializing load_model()
+2021-02-09 05:13:31,714:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 05:13:31,778:INFO:Initializing predict_model()
+2021-02-09 05:13:31,782:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001E061C4FB88>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 05:13:31,782:INFO:Checking exceptions
+2021-02-09 05:13:31,783:INFO:Preloading libraries
+2021-02-09 05:20:46,839:INFO:Initializing load_model()
+2021-02-09 05:20:46,840:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 05:20:46,902:INFO:Initializing predict_model()
+2021-02-09 05:20:46,902:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001E06107E148>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 05:20:46,903:INFO:Checking exceptions
+2021-02-09 05:20:46,904:INFO:Preloading libraries
+2021-02-09 05:28:53,539:INFO:Initializing load_model()
+2021-02-09 05:28:53,540:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 05:28:53,599:INFO:Initializing predict_model()
+2021-02-09 05:28:53,600:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001E061AE8BC8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 05:28:53,603:INFO:Checking exceptions
+2021-02-09 05:28:53,604:INFO:Preloading libraries
+2021-02-09 05:37:22,589:INFO:Initializing load_model()
+2021-02-09 05:37:22,590:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 05:37:22,670:INFO:Initializing predict_model()
+2021-02-09 05:37:22,670:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001E06107FAC8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 05:37:22,671:INFO:Checking exceptions
+2021-02-09 05:37:22,671:INFO:Preloading libraries
+2021-02-09 05:40:35,936:INFO:Initializing load_model()
+2021-02-09 05:40:35,937:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 05:40:36,003:INFO:Initializing predict_model()
+2021-02-09 05:40:36,004:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001E061F28688>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 05:40:36,004:INFO:Checking exceptions
+2021-02-09 05:40:36,004:INFO:Preloading libraries
+2021-02-09 05:42:35,509:INFO:Initializing load_model()
+2021-02-09 05:42:35,510:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 05:42:35,582:INFO:Initializing predict_model()
+2021-02-09 05:42:35,590:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001E061AEF688>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 05:42:35,591:INFO:Checking exceptions
+2021-02-09 05:42:35,592:INFO:Preloading libraries
+2021-02-09 05:44:04,019:INFO:Initializing load_model()
+2021-02-09 05:44:04,019:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 05:44:04,088:INFO:Initializing predict_model()
+2021-02-09 05:44:04,089:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001E06161C4C8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 05:44:04,090:INFO:Checking exceptions
+2021-02-09 05:44:04,090:INFO:Preloading libraries
+2021-02-09 05:45:41,577:INFO:Initializing load_model()
+2021-02-09 05:45:41,577:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-09 05:45:41,646:INFO:Initializing predict_model()
+2021-02-09 05:45:41,646:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001E061C410C8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-09 05:45:41,647:INFO:Checking exceptions
+2021-02-09 05:45:41,648:INFO:Preloading libraries
+2021-02-10 00:22:04,758:INFO:Initializing load_model()
+2021-02-10 00:22:04,774:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 00:22:06,429:INFO:Initializing predict_model()
+2021-02-10 00:22:06,445:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x0000014FBEC00D08>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 00:22:06,449:INFO:Checking exceptions
+2021-02-10 00:22:06,450:INFO:Preloading libraries
+2021-02-10 01:11:36,030:INFO:Initializing load_model()
+2021-02-10 01:11:36,046:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 01:11:36,842:INFO:Initializing predict_model()
+2021-02-10 01:11:36,843:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001F40342AEC8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 01:11:36,845:INFO:Checking exceptions
+2021-02-10 01:11:36,845:INFO:Preloading libraries
+2021-02-10 01:45:41,572:INFO:Initializing load_model()
+2021-02-10 01:45:41,572:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 01:45:41,659:INFO:Initializing predict_model()
+2021-02-10 01:45:41,659:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002B400B97808>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 01:45:41,660:INFO:Checking exceptions
+2021-02-10 01:45:41,661:INFO:Preloading libraries
+2021-02-10 01:59:40,132:INFO:Initializing load_model()
+2021-02-10 01:59:40,133:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 01:59:40,196:INFO:Initializing predict_model()
+2021-02-10 01:59:40,196:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002B401157C88>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 01:59:40,197:INFO:Checking exceptions
+2021-02-10 01:59:40,197:INFO:Preloading libraries
+2021-02-10 02:34:38,648:INFO:Initializing load_model()
+2021-02-10 02:34:38,649:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 02:34:38,733:INFO:Initializing predict_model()
+2021-02-10 02:34:38,733:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001CCB4438808>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 02:34:38,734:INFO:Checking exceptions
+2021-02-10 02:34:38,735:INFO:Preloading libraries
+2021-02-10 02:45:22,353:INFO:Initializing load_model()
+2021-02-10 02:45:22,353:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 02:45:22,400:INFO:Initializing predict_model()
+2021-02-10 02:45:22,401:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001CCB3B47108>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 02:45:22,402:INFO:Checking exceptions
+2021-02-10 02:45:22,402:INFO:Preloading libraries
+2021-02-10 02:54:25,396:INFO:Initializing load_model()
+2021-02-10 02:54:25,397:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 02:54:25,495:INFO:Initializing predict_model()
+2021-02-10 02:54:25,496:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001CCB4685E48>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 02:54:25,499:INFO:Checking exceptions
+2021-02-10 02:54:25,501:INFO:Preloading libraries
+2021-02-10 02:57:06,588:INFO:Initializing load_model()
+2021-02-10 02:57:06,589:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 02:57:06,645:INFO:Initializing predict_model()
+2021-02-10 02:57:06,646:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000001CCB4457CC8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 02:57:06,648:INFO:Checking exceptions
+2021-02-10 02:57:06,648:INFO:Preloading libraries
+2021-02-10 03:34:25,382:INFO:Initializing load_model()
+2021-02-10 03:34:25,383:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 03:34:25,462:INFO:Initializing predict_model()
+2021-02-10 03:34:25,463:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x0000014B065E1508>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 03:34:25,465:INFO:Checking exceptions
+2021-02-10 03:34:25,465:INFO:Preloading libraries
+2021-02-10 03:37:23,142:INFO:Initializing load_model()
+2021-02-10 03:37:23,143:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 03:37:23,205:INFO:Initializing predict_model()
+2021-02-10 03:37:23,206:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x0000014B06E338C8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 03:37:23,206:INFO:Checking exceptions
+2021-02-10 03:37:23,209:INFO:Preloading libraries
+2021-02-10 03:42:10,918:INFO:Initializing load_model()
+2021-02-10 03:42:10,919:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 03:42:10,978:INFO:Initializing predict_model()
+2021-02-10 03:42:10,979:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x0000014B06E1E8C8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 03:42:10,980:INFO:Checking exceptions
+2021-02-10 03:42:10,982:INFO:Preloading libraries
+2021-02-10 03:46:44,880:INFO:Initializing load_model()
+2021-02-10 03:46:44,880:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 03:47:17,241:INFO:Initializing load_model()
+2021-02-10 03:47:17,242:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 03:47:17,307:INFO:Initializing predict_model()
+2021-02-10 03:47:17,308:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x0000014B06DE9EC8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 03:47:17,309:INFO:Checking exceptions
+2021-02-10 03:47:17,309:INFO:Preloading libraries
+2021-02-10 03:49:35,732:INFO:Initializing load_model()
+2021-02-10 03:49:35,733:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 03:49:35,797:INFO:Initializing predict_model()
+2021-02-10 03:49:35,797:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x0000014B0637D748>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 03:49:35,798:INFO:Checking exceptions
+2021-02-10 03:49:35,799:INFO:Preloading libraries
+2021-02-10 03:50:01,405:INFO:Initializing load_model()
+2021-02-10 03:50:01,406:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 03:50:01,467:INFO:Initializing predict_model()
+2021-02-10 03:50:01,467:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x0000014B06DF33C8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 03:50:01,469:INFO:Checking exceptions
+2021-02-10 03:50:01,470:INFO:Preloading libraries
+2021-02-10 03:57:52,433:INFO:Initializing load_model()
+2021-02-10 03:57:52,433:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 03:57:52,523:INFO:Initializing predict_model()
+2021-02-10 03:57:52,523:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000210E5466E88>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 03:57:52,523:INFO:Checking exceptions
+2021-02-10 03:57:52,524:INFO:Preloading libraries
+2021-02-10 03:59:23,869:INFO:Initializing load_model()
+2021-02-10 03:59:23,870:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 03:59:23,939:INFO:Initializing predict_model()
+2021-02-10 03:59:23,949:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000210E5478808>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 03:59:23,995:INFO:Checking exceptions
+2021-02-10 03:59:23,995:INFO:Preloading libraries
+2021-02-10 03:59:41,879:INFO:Initializing load_model()
+2021-02-10 03:59:41,880:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 03:59:41,969:INFO:Initializing predict_model()
+2021-02-10 03:59:41,969:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000210E548D488>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 03:59:41,970:INFO:Checking exceptions
+2021-02-10 03:59:41,972:INFO:Preloading libraries
+2021-02-10 04:01:22,147:INFO:Initializing load_model()
+2021-02-10 04:01:22,147:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 04:01:22,206:INFO:Initializing predict_model()
+2021-02-10 04:01:22,207:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000210E4D674C8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 04:01:22,207:INFO:Checking exceptions
+2021-02-10 04:01:22,208:INFO:Preloading libraries
+2021-02-10 04:02:42,727:INFO:Initializing load_model()
+2021-02-10 04:02:42,740:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 04:02:42,831:INFO:Initializing predict_model()
+2021-02-10 04:02:42,832:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000210E577AC88>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 04:02:42,833:INFO:Checking exceptions
+2021-02-10 04:02:42,833:INFO:Preloading libraries
+2021-02-10 04:04:07,777:INFO:Initializing load_model()
+2021-02-10 04:04:07,778:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 04:04:07,824:INFO:Initializing predict_model()
+2021-02-10 04:04:07,824:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000210E5F158C8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 04:04:07,825:INFO:Checking exceptions
+2021-02-10 04:04:07,825:INFO:Preloading libraries
+2021-02-10 04:04:59,559:INFO:Initializing load_model()
+2021-02-10 04:04:59,560:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 04:04:59,616:INFO:Initializing predict_model()
+2021-02-10 04:04:59,616:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x00000210E5EFDF08>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 04:04:59,623:INFO:Checking exceptions
+2021-02-10 04:04:59,624:INFO:Preloading libraries
+2021-02-10 17:33:05,466:INFO:Initializing load_model()
+2021-02-10 17:33:05,478:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 17:33:07,467:INFO:Initializing predict_model()
+2021-02-10 17:33:07,468:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002C77D3E3748>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 17:33:07,469:INFO:Checking exceptions
+2021-02-10 17:33:07,469:INFO:Preloading libraries
+2021-02-10 17:34:56,141:INFO:Initializing load_model()
+2021-02-10 17:34:56,142:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 17:34:56,227:INFO:Initializing predict_model()
+2021-02-10 17:34:56,228:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002C77DDAFC48>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 17:34:56,230:INFO:Checking exceptions
+2021-02-10 17:34:56,231:INFO:Preloading libraries
+2021-02-10 17:35:26,392:INFO:Initializing load_model()
+2021-02-10 17:35:26,393:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 17:35:26,436:INFO:Initializing predict_model()
+2021-02-10 17:35:26,437:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002C77DDEA3C8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 17:35:26,437:INFO:Checking exceptions
+2021-02-10 17:35:26,438:INFO:Preloading libraries
+2021-02-10 17:36:34,424:INFO:Initializing load_model()
+2021-02-10 17:36:34,425:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 17:36:34,485:INFO:Initializing predict_model()
+2021-02-10 17:36:34,486:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002C77D36C848>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 17:36:34,486:INFO:Checking exceptions
+2021-02-10 17:36:34,486:INFO:Preloading libraries
+2021-02-10 17:37:40,031:INFO:Initializing load_model()
+2021-02-10 17:37:40,032:INFO:load_model(model_name=utils/models/model_pre, platform=None, authentication=None, verbose=True)
+2021-02-10 17:37:40,092:INFO:Initializing predict_model()
+2021-02-10 17:37:40,093:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['3P', 'OR', 'PF',
+                                                          'ST', 'TO', 'BL'],
+                                      target='FD_PTS')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestD...
+                ('rem_outliers', 'passthrough'), ('cluster_all', 'passthrough'),
+                ('dummy', Dummify(target='FD_PTS')),
+                ('fix_perfect', Remove_100(target='FD_PTS')),
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 <catboost.core.CatBoostRegressor object at 0x000002C77DD788C8>]]), probability_threshold=None, encoded_labels=True, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-02-10 17:37:40,093:INFO:Checking exceptions
+2021-02-10 17:37:40,094:INFO:Preloading libraries
