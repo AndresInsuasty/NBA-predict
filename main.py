@@ -74,24 +74,30 @@ if uploaded_file is not None:
         print(fact.keys())
         fac_dec=1/(num_fact*2)
         for i in data_predict.index:
-            data_predict['FD_PTS'][i] = data_predict['FD_PTS'][i] * (1+float(fact[data_predict['TEAM'][i]]*fac_dec))
+            data_predict['FD_PTS'][i] = data_predict['FD_PTS'][i] * (1.05+float(fact[data_predict['TEAM'][i]]*fac_dec))
         #data_predict['FD_PTS'] = data_predict['FD_PTS'] * 
             
         #Generacion de equipos
         st.title('NBA Fantasy points Lineups')
         columns = data_predict.columns
         inicio=0
-        fin=4
+        fin=6
         SG,SF,PG,PF,C = get_player(data_predict,inicio,fin) 
         arr_team = get_teams(SG,SF,PG,PF,C,inicio,fin)
         output_team = {}
-        output_team = select_teams(arr_team,columns,output_team,salary,n_teams)
+        aux=select_teams(arr_team,columns,output_team,salary,n_teams)
+        print(aux)
+        output_team.update(aux)
+        print('Entre while teams')
         #print("Antes while "+str(len(output_team)))
         while(len(output_team)<n_teams):
             inicio+=1
             fin+=1
             arr_team =  get_teams(SG,SF,PG,PF,C,inicio,fin)
-            output_team = select_teams(arr_team,columns,output_team,salary,n_teams)
+            aux=select_teams(arr_team,columns,output_team,salary,n_teams)
+            print(aux)
+            output_team.update(aux)
+            print('sali output')
             #print("Dentro while "+str(len(output_team)))
         #Muestra de equipos
         pts=0

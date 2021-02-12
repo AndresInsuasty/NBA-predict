@@ -31,7 +31,8 @@ def juntar(l1,l2):
   return aux
 
 def select_teams(teams,columns,output,salary_l=60000,num_team=20):
-  num=1
+  #print(teams)
+  num = len(output)+1
   for team in teams:
     aux_df = pd.DataFrame(team,columns=columns)
     if aux_df['FD_SALARY'].sum() <= salary_l :
@@ -39,9 +40,10 @@ def select_teams(teams,columns,output,salary_l=60000,num_team=20):
        count = len(contar_team[contar_team>4])
        if count == 0:
          output['team'+str(num)]=aux_df
+         #print(aux_df)
          num += 1
          if num>num_team:
-           break;
+           return output;
   return output
 
 
@@ -76,6 +78,14 @@ def get_player(data,inicio,fin):
     PF_d = PF_d.values.tolist()
     C_d = C_d.values.tolist()
 
+    if len(SG_d)>15: SG_d = SG_d[0:-1:2]
+    if len(SF_d)>15: SF_d = SF_d[0:-1:2]
+    if len(PG_d)>15: PG_d = PG_d[0:-1:2]
+    if len(PF_d)>15: PF_d = PF_d[0:-1:2]
+    if len(C_d)>15: C_d = C_d[0:-1:2]
+    
+   
+
     #Combinatorio de los elementos
     SG = list(combinations(SG_d,2))
     SF = list(combinations(SF_d,2))
@@ -91,9 +101,13 @@ def get_player(data,inicio,fin):
     C =  [list(i) for i in C]
 
     SG.sort(key=sum_pts,reverse=True)
+    print(SG)
     SF.sort(key=sum_pts,reverse=True)
+    print(SF)
     PG.sort(key=sum_pts,reverse=True)
+    print(PG)
     PF.sort(key=sum_pts,reverse=True)
+    print(PF)
     #get_teams(SG,SF,PG,PF,C,inicio,fin)
     return SG,SF,PG,PF,C
     
@@ -112,7 +126,7 @@ def get_teams(SG,SF,PG,PF,C,inicio,fin):
     teams = juntar(teams,C)
 
     #Como estaban ordenados las primeros tienen los mayores pts
-    best_team= teams[0:50000]
+    best_team= teams
     #ordenamos
     best_team.sort(key=sum_pts,reverse=True)
 
