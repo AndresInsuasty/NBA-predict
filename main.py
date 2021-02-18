@@ -86,18 +86,14 @@ if uploaded_file is not None:
         arr_team = get_teams(SG,SF,PG,PF,C,inicio,fin)
         output_team = {}
         aux=select_teams(arr_team,columns,output_team,salary,n_teams)
-        print(aux)
         output_team.update(aux)
-        print('Entre while teams')
         #print("Antes while "+str(len(output_team)))
         while(len(output_team)<n_teams):
             inicio+=1
             fin+=1
             arr_team =  get_teams(SG,SF,PG,PF,C,inicio,fin)
             aux=select_teams(arr_team,columns,output_team,salary,n_teams)
-            print(aux)
             output_team.update(aux)
-            print('sali output')
             #print("Dentro while "+str(len(output_team)))
         #Muestra de equipos
         pts=0

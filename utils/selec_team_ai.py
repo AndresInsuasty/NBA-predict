@@ -31,7 +31,6 @@ def juntar(l1,l2):
   return aux
 
 def select_teams(teams,columns,output,salary_l=60000,num_team=20):
-  #print(teams)
   num = len(output)+1
   for team in teams:
     aux_df = pd.DataFrame(team,columns=columns)
@@ -40,7 +39,6 @@ def select_teams(teams,columns,output,salary_l=60000,num_team=20):
        count = len(contar_team[contar_team>4])
        if count == 0:
          output['team'+str(num)]=aux_df
-         #print(aux_df)
          num += 1
          if num>num_team:
            return output;
@@ -101,13 +99,9 @@ def get_player(data,inicio,fin):
     C =  [list(i) for i in C]
 
     SG.sort(key=sum_pts,reverse=True)
-    print(SG)
     SF.sort(key=sum_pts,reverse=True)
-    print(SF)
     PG.sort(key=sum_pts,reverse=True)
-    print(PG)
     PF.sort(key=sum_pts,reverse=True)
-    print(PF)
     #get_teams(SG,SF,PG,PF,C,inicio,fin)
     return SG,SF,PG,PF,C
     
